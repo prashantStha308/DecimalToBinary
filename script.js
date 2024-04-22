@@ -1,8 +1,5 @@
 let binary=function(n){
 
-    if(!Number.isInteger(n)|| typeof(n) == "string"){
-        console.log("invalid");
-    }
 
     let i=0;
     let count=[];
@@ -29,7 +26,6 @@ $("#convert-btn").click(function(){
     console.log(decimal);
 
     if(!Number.isInteger(decimal)|| typeof(decimal) == "string"){
-        outputElement.text("Invalid number. Number cannot be float or string");
         return;
     }
 
@@ -45,7 +41,6 @@ $("#decimal").keypress(function(event){
         console.log(decimal);
 
         if(!Number.isInteger(decimal)|| typeof(decimal) == "string"){
-            outputElement.text("Invalid number. Number cannot be float or string");
             return;
         }
 
