@@ -23,7 +23,7 @@ outputElement = $("#binary");
 
 $("#convert-btn").click(function(){
     let decimal = parseInt($("#decimal").val());
-    console.log(decimal);
+    
 
     if(!Number.isInteger(decimal)|| typeof(decimal) == "string"){
         return;
@@ -31,7 +31,7 @@ $("#convert-btn").click(function(){
 
     let res = binary(decimal);
     let result = res.join('');
-    console.log("result: " + result);
+    
     outputElement.text(result);
 })
 
@@ -46,7 +46,6 @@ $("#decimal").keypress(function(event){
 
         let res = binary(decimal);
         let result = res.join('')
-        console.log("result: " + result);
         outputElement.text(result);
     }
 })
