@@ -1,4 +1,4 @@
-#Decimal to Binary converter
+# Decimal to Binary converter
 
 A simple web app that converts decimal numbers to binary
 
